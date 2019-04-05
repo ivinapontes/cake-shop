@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="stylesheet" type="text/css" href="grid.css" />
+    <title>Semantics</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="https://i.etsystatic.com/15195844/d/il/7bfd95/1219090570/il_340x270.1219090570_m71z.jpg?version=0"
+        />logo
+      </div>
+      <div class="contact-btn">contact</div>
+    </header>
+
+    <main>
+      <nav>
+        <ul>
+          <li class="menu-items"><a href="/">HOME</a></li>
+          <li class="menu-items"><a href="/">CATERING</a></li>
+          <li class="menu-items"><a href="/"> ORDERING</a></li>
+          <li class="menu-items"><a href="/"> LESSONS</a></li>
+          <li class="menu-items"><a href="/">ABOUT</a></li>
+        </ul>
+        <button id="menuButton">Menu</button>
+      </nav>
+      <div class="main-images">
+        <aside class="first-box">
+          <img
+            src="https://images-production.freetls.fastly.net/uploads/photos/file/203100/halloween-cupcakes-black-cat-cupcakes.jpg?auto=compress&crop=top&fit=max&q=55&w=412"
+          />
+          <div class="sub-heading">information</div>
+        </aside>
+
+        <section class="image-carousel">
+          <article class="large-image">
+            <img
+              src="https://www.sugarhero.com/wp-content/uploads/2019/01/striped-buttercream-balloon-cake-7a.jpg"
+            />
+          </article>
+          <section class="small-images">
+            <article class="small-image">
+              <img
+                src="https://www.wellandgood.com/wp-content/uploads/2018/05/Avocado-chocolate-cupcakes-with-cherry-icing.jpg"
+              />
+            </article>
+            <article class="small-image">
+              <img
+                src="https://www.thekitchensnob.com/wp-content/uploads/2015/09/fancy-cupcakes-9.jpg"
+              />
+            </article>
+            <article class="small-image">
+              <img
+                src="https://www.thekitchensnob.com/wp-content/uploads/2015/09/fancy-cupcakes-9.jpg"
+              />
+            </article>
+            <article class="small-image">
+              <img
+                src="https://www.wellandgood.com/wp-content/uploads/2018/05/Avocado-chocolate-cupcakes-with-cherry-icing.jpg"
+              />
+            </article>
+          </section>
+        </section>
+      </div>
+      <section class="cakes">
+        <article class="cakes-pics">
+          <div class="inner-img">
+            <img
+              src="http://www.perfect-wedding-day.com/image-files/gothic-wedding-cakes-1.jpg"
+            />
+          </div>
+          <div class="inner-heading"></div>
+        </article>
+        <article class="cakes-pics">
+          <div class="inner-img">
+            <img
+              src="http://mymodernmet.com/wp/wp-content/uploads/2017/05/dark-wedding-cakes-12.jpg"
+            />
+          </div>
+          <div class="inner-heading"></div>
+        </article>
+
+        <article class="cakes-pics">
+          <div class="inner-img">
+            <img
+              src="https://steemitimages.com/640x0/http://78.media.tumblr.com/a4557a8477400818ea7563f915164e32/tumblr_p1bmb7gHWE1qas1mto7_1280.jpg"
+            />
+          </div>
+          <div class="inner-heading"></div>
+        </article>
+        <article class="cakes-pics">
+          <div class="inner-img">
+            <img
+              src="http://trivandrumcakehouse.com/wp-content/uploads/2015/10/Sweet-Delish-Rainbow-Cake-Colors-1.jpg"
+            />
+          </div>
+          <div class="inner-heading"></div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <ul>
+        <li class="menu-items">SITE MAP</li>
+
+        <li class="menu-items">CONTACT</li>
+
+        <li class="menu-items">DELIVERY</li>
+
+        <li class="menu-items">-----</li>
+
+        <li class="menu-items">----------</li>
+      </ul>
+    </footer>
+
+    <script>
+      const button = document.getElementById("menuButton");
+      const ul = document.getElementsByTagName("ul")[0];
+      console.log(button);
+      button.addEventListener("click", myFunction, false);
+      function myFunction() {
+        // add a new class and hide the ul
+        ul.classList.toggle("hide");
+
+        // if (ul.classList.contains("hide")) {
+        //   console.log("hidden");
+        //   ul.classList.remove("hide");
+        // } else {
+        //   ul.classList.add("hide");
+        // }
+      }
+
+      // check Toogle to refactor
+    </script>
+  </body>
+</html>

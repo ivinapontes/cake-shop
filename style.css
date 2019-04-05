@@ -1,0 +1,162 @@
+header {
+  background-color: lightgray;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+img {
+  /* height: 100%; */
+  width: 100%;
+}
+
+a {
+  color: white;
+}
+
+main {
+  margin: 5px;
+  min-height: 400px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  background-color: lightyellow;
+}
+
+footer {
+  background-color: lightyellow;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  height: 80px;
+  width: 200px;
+  margin: 10px;
+  background-color: purple;
+  overflow: hidden;
+  /* background-image: url("https://as1.ftcdn.net/jpg/01/44/96/02/500_F_144960211_pBy6HdB7yiAkNQwbwiYDghXnHZhZaeRF.jpg"); */
+}
+
+.contact-btn {
+  background-color: lightyellow;
+  height: 50px;
+  width: 100px;
+  margin: 35px 10px;
+}
+
+.menu-items {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  height: 80%;
+  margin: 5px;
+}
+
+.main-images {
+  background-color: lightyellow;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-box {
+  background-color: lightyellow;
+  height: auto;
+  width: 30%;
+}
+.image-carousel {
+  width: 60%;
+  background-color: lightyellow;
+}
+.large-image {
+  margin: 10px;
+  overflow: hidden;
+}
+.small-images {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.small-image {
+  height: 70px;
+  width: 20%;
+
+  overflow: hidden;
+}
+.cakes {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cakes-pics {
+  height: 140px;
+  width: 20%;
+  background-color: lightyellow;
+}
+.inner-img {
+  height: 70%;
+  width: 70%;
+  margin: 10px 30px 0 25px;
+  overflow: hidden;
+}
+.inner-heading {
+  margin: 8px;
+  background-color: salmon;
+  height: 20px;
+}
+
+/* @media only screen and (min-width: 721px) {
+  .desktop {
+    background-color: yellow;
+  }
+  .wraper {
+    justtify-content: space-around;
+  }
+} */
+
+@media only screen and (min-width: 301px) and (max-width: 720px) {
+  .main-images {
+    flex-direction: column;
+    align-items: center;
+  }
+  .first-box {
+    width: 50%;
+  }
+  .image-carousel {
+    width: 70%;
+  }
+  .small-images {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+  .main-images {
+    flex-direction: column;
+  }
+
+  .first-box {
+    width: 70%;
+  }
+  .image-carousel {
+    width: 70%;
+  }
+}
+
+/* hide tthe nav bar */
+.hide {
+  display: none;
+}
+
+/* desktop 4 in a row from 721 */
+/* ipad 2 in a row from 301 to 720 */
+/* mobile 1 in a row up to 300*/
